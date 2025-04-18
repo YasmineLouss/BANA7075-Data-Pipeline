@@ -14,7 +14,7 @@ st.title("🛒 Grocery Orders Recommender + Analyzer")
 # --- Paths ---
 data_dir = "data"
 orders_path = os.path.join(data_dir, "orders.csv")
-prior_path = os.path.join(data_dir, "order_products__prior.csv")
+prior_path = os.path.join(data_dir, "order_products_prior.csv")
 products_path = os.path.join(data_dir, "products.csv")
 aisles_path = os.path.join(data_dir, "aisles.csv")
 departments_path = os.path.join(data_dir, "departments.csv")
