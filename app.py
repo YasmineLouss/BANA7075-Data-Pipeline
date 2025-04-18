@@ -14,15 +14,15 @@ st.title("🛒 Grocery Orders Recommender + Analyzer")
 # --- Paths ---
 data_dir = "data"
 orders_path = os.path.join(data_dir, "orders.csv")
-prior_path = os.path.join(data_dir, "order_products_prior.csv")
+prior_path = os.path.join(data_dir, "order_products__prior.csv")
 products_path = os.path.join(data_dir, "products.csv")
 aisles_path = os.path.join(data_dir, "aisles.csv")
 departments_path = os.path.join(data_dir, "departments.csv")
 
 # --- Load Data ---
-orders_df = pd.read_csv('data/orders/order_products__prior.csv')
-products_df = pd.read_csv('data/products/products.csv')
-orders_full = pd.read_csv('data/orders/orders.csv')
+orders_df = pd.read_csv(prior_path)
+products_df = pd.read_csv(products_path)
+orders_full = pd.read_csv(orders_path)
 aisles_df = pd.read_csv(aisles_path)
 departments_df = pd.read_csv(departments_path)
 
